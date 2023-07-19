@@ -1,0 +1,78 @@
+@font-face{font-family:harry potter;font-style:normal;font-weight:400;src:local('Harry Potter'),url(https://fonts.cdnfonts.com/s/25438/HARRP___.woff) format('woff')}
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    font-family: 'Harry Potter', sans-serif;                                 
+}
+.banner-text{
+    position: relative;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Harry Potter', sans-serif; 
+}
+.navbar{
+    width:100%;
+    height:25px;
+    margin:auto;
+    display:flex;
+    align-content: center;
+    flex-direction: row;
+    align-items:center;
+    background-color: black;
+    color: black;
+}
+.navbar ul > li{
+    display: inline-block;
+    background: black;
+    color: black;
+    margin: 0px;
+    list-style-type:none
+}
+.Text{
+    flex-direction: column; 
+    background: black;
+    color: black;
+}
+.study-text{
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content:space-around
+  }
+.column::before {
+    content: ""
+}
+.column::after {
+    content: ""
+}
+.column img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.rest {
+    background: black;
+    color: black;
+}
